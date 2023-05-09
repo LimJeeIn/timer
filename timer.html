@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>타이머</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><img src="img/weniv-logo.png" alt="위니브 로고" /></h1>
+      <section>
+        <h2>TIMER</h2>
+        <div class="time-wrap">
+          <article>
+            <input id="hours" type="number" min="0" max="59" value="0" />
+          </article>
+          <article>
+            <input id="minutes" type="number" min="0" max="59" value="0" />
+          </article>
+          <article>
+            <input id="seconds" type="number" min="0" max="59" value="0" />
+          </article>
+        </div>
+
+        <div class="btn">
+          <button type="button" id="start">
+            <img src="img/icon-start-disabled.png" alt="" />
+          </button>
+          <button type="button" id="pause">
+            <img src="img/icon-stop.png" alt="" />
+          </button>
+          <button type="button" id="reset">
+            <img src="img/shape.png" alt="" />
+          </button>
+          <div class="timer">
+            <span id="display">00:00:00</span>
+          </div>
+        </div>
+      </section>
+      <p class="weniv-text">ⓒ WENIV Corp.</p>
+    </div>
+    <script src="script/index.js"></script>
+  </body>
+</html>
